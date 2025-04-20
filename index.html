@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galáxia Express - Entregas Espaciais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="space-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        
+        <div class="control-panel">
+            <div class="panel-header">
+                <i class="fas fa-satellite"></i>
+                <h1>Galáxia Express</h1>
+                <div class="status-light"></div>
+            </div>
+
+            <div class="command-center">
+                <div class="control-group">
+                    <button id="addPackage" class="neon-button">
+                        <i class="fas fa-box-open"></i>
+                        Novo Pacote Espacial
+                    </button>
+                    <button id="deliverPackage" class="neon-button">
+                        <i class="fas fa-rocket"></i>
+                        Lançar Entrega
+                    </button>
+                </div>
+            </div>
+
+            <div class="display-panels">
+                <div class="panel queue-panel">
+                    <div class="panel-title">
+                        <i class="fas fa-tasks"></i>
+                        Fila de Lançamento
+                    </div>
+                    <div id="queueDisplay" class="holo-display"></div>
+                </div>
+
+                <div class="delivery-animation">
+                    <div id="deliveryTruck" class="spaceship">🛸</div>
+                    <div id="destination" class="planet">🪐</div>
+                </div>
+
+                <div class="panel history-panel">
+                    <div class="panel-title">
+                        <i class="fas fa-history"></i>
+                        Registro de Entregas
+                    </div>
+                    <div id="historyDisplay" class="holo-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
